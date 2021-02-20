@@ -11,7 +11,7 @@ class MainComponent extends React.Component {
                                 Yapılacaklar Listesi
                             </h3>
                             <div className="input-group">
-                                <input type="text" className="form-control"/>
+                                <input type="text" className="form-control" placeholder="yeni faaliyet giriniz"/>
                                     <div className="input-group-append">
                                         <button className="btn btn-primary">Add</button>
                                     </div>
