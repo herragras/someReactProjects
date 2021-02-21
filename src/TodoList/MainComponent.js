@@ -1,4 +1,5 @@
 import React from "react";
+import TodoBar from "./TodoBar";
 
 class MainComponent extends React.Component {
     render() {
@@ -10,12 +11,7 @@ class MainComponent extends React.Component {
                             <h3 className="bg-primary text-white p-3 text-center">
                                 Yapılacaklar Listesi
                             </h3>
-                            <div className="input-group">
-                                <input type="text" className="form-control" placeholder="yeni faaliyet giriniz"/>
-                                    <div className="input-group-append">
-                                        <button className="btn btn-primary">Add</button>
-                                    </div>
-                            </div>
+                            <TodoBar />
                            
                             <div className="custom-control custom-checkbox my-3">
                                 <input type="checkbox" className="custom-control-input" name="" id="displayAll"/>
