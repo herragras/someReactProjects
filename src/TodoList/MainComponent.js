@@ -11,11 +11,12 @@ class MainComponent extends React.Component {
                             <h3 className="bg-primary text-white p-3 text-center">
                                 Yapılacaklar Listesi
                             </h3>
-                            <TodoBar />
-                           
+                            <div>
+                                <TodoBar />
+                            </div>
                             <div className="custom-control custom-checkbox my-3">
                                 <input type="checkbox" className="custom-control-input" name="" id="displayAll"/>
-                                <label className="custom-control-label" for="displayAll">Display All</label>
+                                <label className="custom-control-label" htmlFor="displayAll">Display All</label>
                             </div>
                             <table className="table table-striped table-bordered">
                                 <thead>
