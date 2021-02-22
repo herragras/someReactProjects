@@ -1,7 +1,9 @@
 import React from "react";
 
+var Deger;
 class TodoBar extends React.Component {
     render() {
+
         return (
             <div className="input-group">
                 <input type="text" className="form-control" placeholder="yeni faaliyet giriniz" />

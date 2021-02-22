@@ -29,7 +29,7 @@ class MainComponent extends React.Component {
                                 <tbody>
                                     <tr>
                                     <td>1</td>
-                                    <td>Birinci faaliyet</td>
+                                    <td>birinci faaliyet</td>
                                     <td>
                                         <input type="checkbox" />
                                     </td>

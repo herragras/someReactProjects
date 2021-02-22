@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import MainComponent from "./TodoList/MainComponent";
 
+import VideoApp from "./Videos/VideoApp";
+
 
 
 class App extends React.Component {
@@ -30,3 +32,6 @@ ReactDOM.render(
 
 ReactDOM.render(
             <MainComponent />, document.querySelector('#root1'));
+
+ReactDOM.render(
+            <VideoApp />, document.querySelector('#root2'));
