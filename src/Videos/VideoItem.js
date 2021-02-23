@@ -1,10 +1,10 @@
 import React from "react";
 
-const VideoItem = ({video}) => {
+const VideoItem = ({video, onVideoSelect}) => {
     return (
-    <div >
+    <div>
         <div className="card-columns">
-            <div className="card">
+            <div onClick={()=> onVideoSelect(video)} className="card">
             <img src={video.snippet.thumbnails.medium.url}/>
         </div>
         <div className="card-body card-title">
