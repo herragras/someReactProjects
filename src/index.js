@@ -5,6 +5,8 @@ import MainComponent from "./TodoList/MainComponent";
 
 import VideoApp from "./Videos/VideoApp";
 
+import BooksApp from "./BooksApp/BooksApp";
+
 
 
 class App extends React.Component {
@@ -27,6 +29,10 @@ class App extends React.Component {
     );
 };
 }
+
+ReactDOM.render(
+    <BooksApp />, document.querySelector('#root3'));
+
 ReactDOM.render(
             <App />, document.querySelector('#root'));
 
