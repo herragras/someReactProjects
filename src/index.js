@@ -10,9 +10,13 @@ import VideoApp from "./Videos/VideoApp";
 
 import BooksApp from "./BooksApp/BooksApp";
 
+import CounterApp from "./CounterApp/counter";
 
 
 
+
+ReactDOM.render(
+    <CounterApp />, document.querySelector('#root4'));
 
 ReactDOM.render(
     <BooksApp />, document.querySelector('#root3'));
