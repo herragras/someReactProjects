@@ -1,22 +1,47 @@
-import React, {Component } from "react";
+import React from "react";
 
-class CounterApp extends Component{
+class CounterApp extends React.Component{
     state={
-        count: 0
+        value: 0
+       
     };
-    render() {
 
+        //constructor() {
+        //    super();
+        //    this.handleIncrement = this.handleIncrement.bind(this);
+        //}
+
+        handleIncrement = () => {
+
+            this.setState({ value: this.state.value +1 });
+           
+        }
+
+     
+        render() {
+    
         return(
-            <div>
-                <span>{this.formatCount()}</span>
-                <button>Increment</button>
+            <div className="m-3">
+                <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+                <button className="brn btn-secondary btn-sm"
+                onClick={this.handleIncrement}
+                >Increment</button>
+                
             </div>
         );
     }
-    formatCount(){
-        const {count} = this.state;
-        return count === 0 ? "Zero" : count;
+    getBadgeClasses() {
+        let classes = "badge m-2 badge-";
+        classes += this.state.value === 0 ? "warning" : "primary";
+        return classes;
     }
+
+    formatCount = () => {
+        const {value} = this.state;
+        return value === 0 ? "Zero" : value;
+       
+   }
+    
 }
 
 export default CounterApp;
