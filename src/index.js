@@ -12,8 +12,12 @@ import BooksApp from "./BooksApp/BooksApp";
 
 import CounterApp from "./CounterApp/counter";
 
+import UserApp from "./UserApp/userApp";
 
 
+
+ReactDOM.render(
+    <UserApp />, document.querySelector('#root5'));
 
 ReactDOM.render(
     <CounterApp />, document.querySelector('#root4'));
@@ -22,10 +26,10 @@ ReactDOM.render(
     <BooksApp />, document.querySelector('#root3'));
 
 ReactDOM.render(
-            <TimeApp />, document.querySelector('#root'));
+    <TimeApp />, document.querySelector('#root'));
 
 ReactDOM.render(
-            <MainComponent />, document.querySelector('#root1'));
+    <MainComponent />, document.querySelector('#root1'));
 
 ReactDOM.render(
-            <VideoApp />, document.querySelector('#root2'));
+    <VideoApp />, document.querySelector('#root2'));
