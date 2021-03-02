@@ -17,15 +17,23 @@ class CounterApp extends React.Component{
            
         }
 
+        handleDecrement = () => { if (this.state.value>0)
+
+            this.setState({value: this.state.value -1 })
+           
+        }
      
         render() {
     
         return(
             <div className="m-3">
-                <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+                <button className={this.getBadgeClasses()}>{this.formatCount()}</button>
                 <button className="brn btn-secondary btn-sm"
                 onClick={this.handleIncrement}
                 >Increment</button>
+                <button className="brn btn-alert btn-sm"
+                onClick={this.handleDecrement}
+                >Decrement</button>
                 
             </div>
         );
