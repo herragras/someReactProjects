@@ -10,7 +10,7 @@ import VideoApp from "./Videos/VideoApp";
 
 import BooksApp from "./BooksApp/BooksApp";
 
-import CounterApp from "./CounterApp/counter";
+import CounterApp from "./CounterApp/counterApp";
 
 import UserApp from "./UserApp/userApp";
 
