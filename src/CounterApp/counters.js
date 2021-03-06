@@ -8,7 +8,7 @@ class Counters extends React.Component{
         return(
             <div>               
                 <button onClick={onReset} 
-                className="btn btn-secondary btn-sm">Reset</button>
+                className="btn btn-primary btn-sm">Reset</button>
                <div> {counters.map(counter => (
                    <Counter 
                    key={counter.id}

@@ -66,8 +66,3 @@ class CounterApp extends Component {
 }
 
 export default CounterApp;
-
-/*const index = counters.indexOf(counter);
-counters[index] = { ...counter };
-counters[index].value++;
-this.setState({ counters });*/
