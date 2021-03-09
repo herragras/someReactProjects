@@ -14,7 +14,11 @@ import CounterApp from "./CounterApp/counterApp";
 
 import UserApp from "./UserApp/userApp";
 
+import TodoTableApp from "./TodoTable/TodoTableApp"
 
+
+ReactDOM.render(
+    <TodoTableApp />, document.querySelector('#root6'));
 
 ReactDOM.render(
     <UserApp />, document.querySelector('#root5'));
