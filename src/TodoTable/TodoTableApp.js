@@ -20,7 +20,7 @@ class App extends React.Component {
           <td>{this.state.todos.indexOf(todo) + 1}</td>
           <td>{todo.action}</td>
           <td>
-            <input onClick={(e) => this.deleteItem(todo)} type="checkBox" />
+            <button className="btn btn-secondary" onClick={(e) => this.deleteItem(todo)} type="button" />
           </td>
         </tr>
       );
@@ -34,7 +34,7 @@ class App extends React.Component {
     if (this.state.newItem !== "")
       this.setState({
         todos: [
-          { id: 5, action: <strong>{this.state.newItem}</strong> },
+          { id: this.state.todos.length+1, action: <strong>{this.state.newItem}</strong> },
           ...this.state.todos,
         ],
       });
@@ -47,7 +47,7 @@ class App extends React.Component {
     e.preventDefault();
     if (this.state.newItem !== "")
       this.setState({
-        todos: [...this.state.todos, { id: 5, action: this.state.newItem }],
+        todos: [...this.state.todos, { id: this.state.todos.length+1, action: this.state.newItem }],
       });
     this.setState({ newItem: "" });
   };
