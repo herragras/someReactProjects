@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "./EmloyeeListApp/EmployeeApp.css";
 
 import TimeApp from "./TimeApp/TimeApp";
 
@@ -14,8 +15,13 @@ import CounterApp from "./CounterApp/counterApp";
 
 import UserApp from "./UserApp/userApp";
 
-import TodoTableApp from "./TodoTable/TodoTableApp"
+import TodoTableApp from "./TodoTable/TodoTableApp";
 
+import EmployeeApp from "./EmloyeeListApp/EmployeeApp";
+
+
+ReactDOM.render(
+    <EmployeeApp />, document.querySelector('#root7'));
 
 ReactDOM.render(
     <TodoTableApp />, document.querySelector('#root6'));
